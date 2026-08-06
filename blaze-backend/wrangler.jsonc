@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nutrimind-backend",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-06",
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "cdc82401589c782c6e6c90588615448f",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "nutrimind-db",
+      "remote": true,
+      "database_id": "f3bef8cd-ee4d-43ce-93b7-8c86632b88b3"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  }
+}
